@@ -1,17 +1,13 @@
-import { Canvas } from '@react-three/fiber'
-import React, { Suspense, useRef } from 'react'
-import './App.css'
-import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei'
-import { BoxHelper } from 'three'
+import { Canvas } from "@react-three/fiber";
+import { Experience } from "./assets/components/Experience";
 
-const App = () => {
+function App() {
   return (
-    <Canvas>
-      <mesh>
-        <boxGeometry />
-      </mesh>
+    <Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
+      <color attach="background" args={["#ececec"]} />
+      <Experience />
     </Canvas>
-  )
+  );
 }
 
-export default App
+export default App;

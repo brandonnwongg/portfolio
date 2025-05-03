@@ -8,13 +8,7 @@ import { useGLTF, useTexture } from '@react-three/drei'
 import * as THREE from "three"
 
 export function Room(props) {
-  const { nodes, materials } = useGLTF('/models/room-scene.glb')
-  const texture = useTexture('/texture/wallb.jpg')
-
-
-  const textureMaterial = new THREE.MeshStandardMaterial({
-    map: texture,
-  })
+  const { nodes, materials } = useGLTF('/models/room-scene.gltf')
   
   return (
     <group {...props} dispose={null}>
@@ -69,9 +63,9 @@ export function Room(props) {
         <mesh name="Circle007" geometry={nodes.Circle007.geometry} material={materials.Speaker1} />
         <mesh name="Circle007_1" geometry={nodes.Circle007_1.geometry} material={materials['Material.017']} />
       </group>
-      <mesh name="Room" geometry={nodes.Room.geometry} material={textureMaterial} position={[9.464, 1.464, 9.217]} />
+      <mesh name="Room" geometry={nodes.Room.geometry} material={materials.Room} position={[9.464, 1.464, 9.217]} />
     </group>
   )
 }
 
-useGLTF.preload('/models/room-scene.glb')
+useGLTF.preload('/models/room-scene.gltf')

@@ -5,7 +5,7 @@ export const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={2.0} />
       <Room />
     </>
   );

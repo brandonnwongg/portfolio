@@ -41,7 +41,7 @@ export function Room(props) {
       <mesh name="TableLeg" geometry={nodes.TableLeg.geometry} material={materials.TableLeg} position={[8.278, -4.088, -4.969]} />
       <mesh name="LampLeg" geometry={nodes.LampLeg.geometry} material={materials.LampLeg} position={[4.411, 1.104, 3.983]} rotation={[Math.PI / 2, 0, 0]} />
       <mesh name="LampHead" geometry={nodes.LampHead.geometry} material={materials.LampHead} position={[4.413, 1.933, 3.984]} rotation={[Math.PI / 2, 0, 0]} />
-      <mesh name="Ball" geometry={nodes.Ball.geometry} material={materials.Ball} position={[3.374, -7.263, 2.687]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh name="Ball" geometry={nodes.Ball.geometry} material={materials.Ball} position={[3.374, -4.41, 2.687]} rotation={[1.974, 0.167, 0.561]} />
       <mesh name="BlueLEDL" geometry={nodes.BlueLEDL.geometry} material={materials.BlueLED} position={[0.132, -0.668, -5.277]} rotation={[0, 0, Math.PI / 2]} />
       <mesh name="BlueLEDR" geometry={nodes.BlueLEDR.geometry} material={materials.BlueLED} position={[8.539, -0.668, 7.11]} rotation={[Math.PI / 2, Math.PI / 2, 0]} />
       <mesh name="Table" geometry={nodes.Table.geometry} material={materials.Table} position={[-2.553, -0.108, -2.095]} />

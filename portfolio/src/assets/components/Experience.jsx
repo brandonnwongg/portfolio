@@ -2,8 +2,18 @@ import { useEffect, useState } from "react";
 import { OrbitControls, Html } from "@react-three/drei";
 import { Room } from "./Room";
 import { Welcome } from "./Welcome";
+import { Avatar } from "./Avatar";
+import { useControls } from "leva";
 
 export const Experience = () => {
+
+  const { animation } = useControls({
+    animation: {
+    value: 'Sleeping',
+    options: ['Sleeping', 'Entering', 'Standing', 'Falling'],
+    },
+  })
+
   const [rightOffset, setRightOffset] = useState(350); 
 
   useEffect(() => {
@@ -25,6 +35,7 @@ export const Experience = () => {
   return (
     <>
       <OrbitControls />
+      <Avatar animation={animation}/>
       <ambientLight intensity={1} />
       <Room />
       <Html

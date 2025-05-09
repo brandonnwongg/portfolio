@@ -35,7 +35,9 @@ export const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <Avatar animation={animation}/>
+      <group name="Empty" position={[-2.572, -5.175, 5.981]} rotation={[-Math.PI, 0.937, -Math.PI]} scale={5.825}>
+      <Avatar animation={animation} />
+      </group>
       <ambientLight intensity={1} />
       <Room />
       <Html
